@@ -1,7 +1,7 @@
 ---
 name: decision-doc
 description: Structure a product decision with options, trade-offs, and a clear recommendation. Takes a decision to make and outputs a concise decision document ready for stakeholder review.
-argument-hint: [decision to make]
+argument-hint: "[decision to make]"
 allowed-tools: Read, Write
 ---
 

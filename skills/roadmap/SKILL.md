@@ -1,7 +1,7 @@
 ---
 name: roadmap
 description: Transform a list of priorities, features, or initiatives into a structured product roadmap. Now/Next/Later format with dependencies, effort sizing, and strategic rationale.
-argument-hint: [list of features, priorities, or strategic goals]
+argument-hint: "[list of features, priorities, or strategic goals]"
 allowed-tools: Read, Write
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: meeting-prep
 description: Generate a 1-page meeting brief with context, objectives, key questions, pre-read, expected decisions, and a parking lot. Takes a meeting topic or agenda and outputs a structured prep document.
-argument-hint: [meeting topic or agenda]
+argument-hint: "[meeting topic or agenda]"
 allowed-tools: Read, Write
 ---
 

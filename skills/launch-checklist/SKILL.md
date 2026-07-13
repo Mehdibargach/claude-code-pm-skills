@@ -1,7 +1,7 @@
 ---
 name: launch-checklist
 description: Generate a complete go-to-market checklist from a product description. Everything you need to launch.
-argument-hint: [product or feature description]
+argument-hint: "[product or feature description]"
 allowed-tools: Read, Write
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: release-notes
 description: Turn git commits, tickets, or raw notes into user-facing release notes. Adjustable tone (B2B formal, B2C friendly, internal).
-argument-hint: [paste commits/tickets or path to file]
+argument-hint: "[paste commits/tickets or path to file]"
 allowed-tools: Read, Write, Bash
 ---
 

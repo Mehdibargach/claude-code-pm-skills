@@ -1,7 +1,7 @@
 ---
 name: prioritize
 description: Score and prioritize a list of features or initiatives using RICE, ICE, or custom frameworks. Takes a feature list and outputs a ranked table with rationale and a recommended cut line.
-argument-hint: [list of features or path to file]
+argument-hint: "[list of features or path to file]"
 allowed-tools: Read, Write
 ---
 

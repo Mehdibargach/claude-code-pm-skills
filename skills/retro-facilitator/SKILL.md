@@ -1,7 +1,7 @@
 ---
 name: retro-facilitator
 description: Facilitate a team retrospective. Generate a retro board with prompts (4Ls, Start-Stop-Continue, Sailboat formats) or synthesize retro notes into grouped themes and prioritized action items.
-argument-hint: [retro format: 4Ls, start-stop-continue, sailboat, or paste notes to synthesize]
+argument-hint: "[retro format: 4Ls, start-stop-continue, sailboat, or paste notes to synthesize]"
 allowed-tools: Read, Write
 ---
 

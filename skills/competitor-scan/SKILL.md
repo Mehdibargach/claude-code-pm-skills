@@ -1,7 +1,7 @@
 ---
 name: competitor-scan
 description: Quick competitive landscape scan for any product or market. Takes a product/market description and returns a competitive map with positioning, gaps, and opportunities.
-argument-hint: [market or product description]
+argument-hint: "[market or product description]"
 allowed-tools: Read, WebFetch, WebSearch, Write
 ---
 

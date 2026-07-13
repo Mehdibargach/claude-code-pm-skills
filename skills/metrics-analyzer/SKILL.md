@@ -1,7 +1,7 @@
 ---
 name: metrics-analyzer
 description: Analyze product data from a CSV file or pasted data. Finds trends, anomalies, segments, and actionable insights. Ask questions about your data in plain English.
-argument-hint: [path to CSV or paste data]
+argument-hint: "[path to CSV or paste data]"
 allowed-tools: Read, Write, Bash
 ---
 

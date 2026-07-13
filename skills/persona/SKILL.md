@@ -1,7 +1,7 @@
 ---
 name: persona
 description: Generate actionable user personas from a product description, user data, or research notes. Not marketing fluff — behavioral personas that drive product decisions.
-argument-hint: [product description, user data, or research notes]
+argument-hint: "[product description, user data, or research notes]"
 allowed-tools: Read, Write
 ---
 

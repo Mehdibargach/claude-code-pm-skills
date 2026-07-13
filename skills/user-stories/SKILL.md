@@ -1,7 +1,7 @@
 ---
 name: user-stories
 description: Turn a feature description into well-structured user stories with acceptance criteria, edge cases, and dependencies.
-argument-hint: [feature description]
+argument-hint: "[feature description]"
 allowed-tools: Read, Write
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: user-interview-prep
 description: Generate a complete user research brief with hypotheses, interview guide, and open-ended questions. Takes a research topic or hypothesis and returns a ready-to-use interview kit.
-argument-hint: [research topic or hypothesis]
+argument-hint: "[research topic or hypothesis]"
 allowed-tools: Read, Write
 ---
 

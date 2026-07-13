@@ -1,7 +1,7 @@
 ---
 name: market-sizing
 description: TAM/SAM/SOM estimation for any product or market. Takes a product/market description and returns structured market sizing with sources, assumptions, and confidence ranges.
-argument-hint: [product or market description]
+argument-hint: "[product or market description]"
 allowed-tools: Read, WebFetch, WebSearch, Write
 ---
 

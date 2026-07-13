@@ -1,7 +1,7 @@
 ---
 name: ab-test-design
 description: Design a complete A/B test or experiment from a hypothesis. Takes what you want to test and outputs a full experiment design with hypothesis, metrics, sample size, duration, and success criteria.
-argument-hint: [what you want to test]
+argument-hint: "[what you want to test]"
 allowed-tools: Read, Write, Bash
 ---
 

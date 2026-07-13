@@ -1,7 +1,7 @@
 ---
 name: stakeholder-update
 description: Turn raw notes into a polished stakeholder update. Supports email, Slack message, or deck bullet points. Takes messy notes and outputs a clear, structured update with TL;DR, progress, blockers, and asks.
-argument-hint: [paste raw notes or context]
+argument-hint: "[paste raw notes or context]"
 allowed-tools: Read, Write
 ---
 

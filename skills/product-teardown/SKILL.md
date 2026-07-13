@@ -1,7 +1,7 @@
 ---
 name: product-teardown
 description: Analyze any product's strategy, UX decisions, business model, and growth loops. Use when a user wants to understand how a product works and why.
-argument-hint: [product name or URL]
+argument-hint: "[product name or URL]"
 allowed-tools: Read, WebFetch, WebSearch, Write
 ---
 

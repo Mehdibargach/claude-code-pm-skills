@@ -1,7 +1,7 @@
 ---
 name: prd
 description: Generate a concise, structured PRD from a product idea. NOT a 20-page doc — 1-2 pages that force clarity.
-argument-hint: [product idea or feature description]
+argument-hint: "[product idea or feature description]"
 allowed-tools: Read, Write
 ---
 

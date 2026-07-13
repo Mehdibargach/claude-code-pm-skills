@@ -1,7 +1,7 @@
 ---
 name: feedback-analyzer
 description: Classify and analyze raw user feedback into themes, sentiment, and actionable insights. Takes pasted feedback text or a path to a CSV file and returns structured patterns and recommendations.
-argument-hint: [paste feedback or path to CSV]
+argument-hint: "[paste feedback or path to CSV]"
 allowed-tools: Read, Write, Bash, Glob, Grep
 ---
 

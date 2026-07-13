@@ -1,7 +1,7 @@
 ---
 name: okr-writer
 description: Turn business goals into structured OKRs with measurable Key Results, linked initiatives, alignment check, and anti-goals. Takes a strategic priority and outputs ready-to-use OKRs.
-argument-hint: [business goal or strategic priority]
+argument-hint: "[business goal or strategic priority]"
 allowed-tools: Read, Write
 ---
 

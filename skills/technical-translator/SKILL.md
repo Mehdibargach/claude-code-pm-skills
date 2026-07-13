@@ -1,7 +1,7 @@
 ---
 name: technical-translator
 description: Translate a technical document (API spec, architecture doc, RFC, eng proposal) into PM-friendly language. What it means for the product and users.
-argument-hint: [path to technical document]
+argument-hint: "[path to technical document]"
 allowed-tools: Read, Write
 ---
 
