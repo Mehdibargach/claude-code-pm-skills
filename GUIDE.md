@@ -14,7 +14,7 @@ Think of it like this:
 
 Each skill is a small file (`SKILL.md`) that tells Claude exactly how to think, what process to follow, and what format to output. You don't need to write prompts. You just provide the subject.
 
-**That's it.** No API keys. No dependencies. No setup beyond copying a folder.
+**That's it.** No required API keys. No dependencies. No setup beyond copying a folder.
 
 ---
 
@@ -30,11 +30,12 @@ You need a terminal app. On Mac, open **Terminal** (search for it in Spotlight).
 git clone https://github.com/Mehdibargach/claude-code-pm-skills.git
 ```
 
-This downloads all 20 skills to your computer.
+This downloads all 21 skills to your computer.
 
 ### Step 3: Copy the skills to Claude Code
 
 ```bash
+mkdir -p ~/.claude/skills
 cp -r claude-code-pm-skills/skills/* ~/.claude/skills/
 ```
 
@@ -93,7 +94,7 @@ You'll get a structured decision document with options, trade-offs, a recommenda
 
 ---
 
-## All 20 Skills — Cheat Sheet
+## All 21 Skills — Cheat Sheet
 
 ### Discovery & Strategy
 
@@ -101,6 +102,7 @@ You'll get a structured decision document with options, trade-offs, a recommenda
 |---------|-------------|--------------|
 | `/product-teardown` | A product name | Business model, UX decisions, growth loops, moat, weaknesses |
 | `/competitor-scan` | A market or product category | Competitor table, positioning map, white space opportunities |
+| `/social-signal-research` | A product, market, or buyer question | X/Twitter signal packet with pains, objections, customer language, and caveats |
 | `/user-interview-prep` | A research question | Hypotheses, 30-min interview guide, Mom Test questions |
 | `/feedback-analyzer` | Pasted feedback or path to CSV | Themes, sentiment, urgency, patterns, recommendations |
 | `/market-sizing` | A product or market description | TAM/SAM/SOM with top-down + bottom-up math and sources |
@@ -212,7 +214,7 @@ More context = better output. Add constraints, numbers, audience, and goals.
 
 Some skills push back when the input is too thin to produce useful output. This is by design — a vague PRD is worse than no PRD. Answer the question and the skill will proceed.
 
-### "I only want some skills, not all 20"
+### "I only want some skills, not all 21"
 
 Copy only the folders you want:
 ```bash
@@ -234,13 +236,13 @@ Edit the `SKILL.md` file directly. It's just a markdown file with instructions. 
 No. Skills run inside Claude Code using your existing Claude subscription.
 
 **Do skills work offline?**
-Most skills work offline. Two exceptions: `/product-teardown`, `/competitor-scan`, and `/market-sizing` use web search to gather data, so they need an internet connection.
+Most skills work offline. Research skills such as `/product-teardown`, `/competitor-scan`, `/market-sizing`, and `/social-signal-research` need an internet connection for live research.
 
 **Can I share a customized skill with my team?**
 Yes. A skill is just a folder with a SKILL.md file inside. Share the folder, have your teammates drop it into their `~/.claude/skills/` directory.
 
 **Do skills send my data anywhere?**
-No. Skills are local instructions. Your data stays in your Claude Code session — nothing is sent to external services beyond what Claude Code already does.
+Skills are local instructions. Research skills may use WebSearch, WebFetch, or a user-approved data source when the task requires it. Do not paste private data unless you are comfortable using those tools.
 
 **Can I use skills with Claude on the web (claude.ai)?**
 No. Skills are a Claude Code feature (the CLI tool). They don't work on claude.ai.

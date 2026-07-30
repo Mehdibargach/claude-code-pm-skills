@@ -1,6 +1,6 @@
 # Claude Code PM Skills
 
-20 production-ready skills for Product Managers using Claude Code.
+21 production-ready skills for Product Managers using Claude Code.
 
 No fluff. No generic prompts. Real PM workflows you can run with a `/command`.
 
@@ -11,6 +11,7 @@ No fluff. No generic prompts. Real PM workflows you can run with a `/command`.
 |-------|-------------|
 | `/product-teardown` | Analyze any product: business model, UX decisions, growth loops, moat |
 | `/competitor-scan` | Competitive landscape scan with positioning map and white space analysis |
+| `/social-signal-research` | Source-backed X/Twitter research packet for demand, objections, and customer language |
 | `/user-interview-prep` | Research brief with hypotheses, interview guide, and Mom Test-compliant questions |
 | `/feedback-analyzer` | Classify raw feedback (CSV or text) by theme, sentiment, urgency + patterns |
 | `/market-sizing` | TAM/SAM/SOM estimation with top-down + bottom-up methodology |
@@ -50,6 +51,9 @@ No fluff. No generic prompts. Real PM workflows you can run with a `/command`.
 # Clone the repo
 git clone https://github.com/Mehdibargach/claude-code-pm-skills.git
 
+# Create the Claude Code skills directory if needed
+mkdir -p ~/.claude/skills
+
 # Copy the skills you want to your Claude Code skills directory
 cp -r claude-code-pm-skills/skills/prd ~/.claude/skills/
 cp -r claude-code-pm-skills/skills/decision-doc ~/.claude/skills/
@@ -60,6 +64,7 @@ cp -r claude-code-pm-skills/skills/decision-doc ~/.claude/skills/
 
 ```bash
 git clone https://github.com/Mehdibargach/claude-code-pm-skills.git
+mkdir -p ~/.claude/skills
 cp -r claude-code-pm-skills/skills/* ~/.claude/skills/
 ```
 
@@ -81,6 +86,8 @@ Each skill is triggered with a `/command`:
 
 /product-teardown Notion
 
+/social-signal-research Developer complaints about webhook reliability
+
 /ab-test-design Moving the CTA button above the fold on the pricing page
 
 /feedback-analyzer /path/to/customer-feedback.csv
@@ -95,7 +102,7 @@ Skills auto-detect context. If you paste a CSV and ask Claude to analyze feedbac
 - **Opinionated, not generic.** Each skill pushes back on vague inputs and forces specificity.
 - **1-2 pages max.** Density over length. No 20-page PRDs.
 - **PM workflows, not prompts.** These are multi-step processes with structured outputs — not one-shot prompts you could type yourself.
-- **Plug and play.** No dependencies. No API keys. Copy the folder, use the skill.
+- **Plug and play.** No required dependencies or API keys. Copy the folder, use the skill.
 
 ## Contributing
 
