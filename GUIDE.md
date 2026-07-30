@@ -35,6 +35,7 @@ This downloads all 20 skills to your computer.
 ### Step 3: Copy the skills to Claude Code
 
 ```bash
+mkdir -p ~/.claude/skills
 cp -r claude-code-pm-skills/skills/* ~/.claude/skills/
 ```
 
