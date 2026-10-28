@@ -1,7 +1,7 @@
 ---
 name: retro-facilitator
-description: Facilitate a team retrospective. Generate a retro board with prompts (4Ls, Start-Stop-Continue, Sailboat formats) or synthesize retro notes into grouped themes and prioritized action items.
-argument-hint: [retro format: 4Ls, start-stop-continue, sailboat, or paste notes to synthesize]
+description: Facilitate a team retrospective. Generate a retro board with prompts (4Ls, Start-Stop-Continue, Sailboat, Mad-Sad-Glad, Timeline/Dataline, Three Little Pigs formats) or synthesize retro notes into grouped themes and prioritized action items.
+argument-hint: [retro format: 4Ls, start-stop-continue, sailboat, mad-sad-glad, timeline, three-little-pigs, or paste notes to synthesize]
 allowed-tools: Read, Write
 ---
 
@@ -12,7 +12,7 @@ Two modes: GENERATE a retro board with prompts, or SYNTHESIZE raw retro notes in
 ## Process
 
 ### Mode Detection
-- If the input is a format name (4Ls, start-stop-continue, sailboat) → GENERATE mode
+- If the input is a format name (4Ls, start-stop-continue, sailboat, mad-sad-glad, timeline, three-little-pigs) → GENERATE mode
 - If the input is pasted notes, bullet points, or raw feedback → SYNTHESIZE mode
 - If unclear, ask.
 
@@ -33,81 +33,14 @@ Two modes: GENERATE a retro board with prompts, or SYNTHESIZE raw retro notes in
 ## Output Format
 
 ### GENERATE Mode
-```
-## Retro Board: [Format Name]
-**Duration:** 60 minutes | **Team size:** [adjust if specified]
 
-### Format Overview
-[2-3 sentences explaining this retro format and when it works best.]
-
-### Section 1: [Name]
-**What goes here:** [description]
-**Seed prompts:**
-- [Specific question to spark discussion]
-- [Specific question to spark discussion]
-- [Specific question to spark discussion]
-**Facilitation tip:** [How to run this section]
-
-### Section 2: [Name]
-[same structure]
-
-### Section 3: [Name]
-[same structure]
-
-### Section 4: [Name] (if applicable)
-[same structure]
-
-### Time Allocation
-| Phase | Duration | Notes |
-|-------|----------|-------|
-| Check-in | 5 min | Quick round — one word for the sprint |
-| Individual writing | 10 min | Silent, everyone adds stickies |
-| Group & discuss | 25 min | Read, cluster, vote on top themes |
-| Action items | 15 min | Assign owners and deadlines |
-| Close | 5 min | One takeaway per person |
-
-### Facilitation Tips
-- [Tip about creating psychological safety]
-- [Tip about keeping discussion productive]
-- [Tip about ensuring actions get assigned]
-```
-
+Retro Board: [Format Name]Duration: 60 minutes | Team size: [adjust if specified]Format Overview[2-3 sentences explaining this retro format and when it works best.]Section 1: [Name]What goes here: [description]
+Seed prompts:[Specific question to spark discussion][Specific question to spark discussion][Specific question to spark discussion]
+Facilitation tip: [How to run this section]Section 2: [Name][same structure]Section 3: [Name][same structure]Section 4: [Name] (if applicable)[same structure]Time AllocationPhaseDurationNotesCheck-in5 minQuick round — one word for the sprintIndividual writing10 minSilent, everyone adds stickiesGroup & discuss25 minRead, cluster, vote on top themesAction items15 minAssign owners and deadlinesClose5 minOne takeaway per personFacilitation Tips[Tip about creating psychological safety][Tip about keeping discussion productive][Tip about ensuring actions get assigned]
 ### SYNTHESIZE Mode
-```
-## Retro Synthesis: [Date/Sprint]
-
-### Themes (ranked by frequency + impact)
-
-#### Theme 1: [Name] (mentioned by [N] people)
-- [Grouped item]
-- [Grouped item]
-- [Grouped item]
-**Root cause:** [One sentence hypothesis]
-
-#### Theme 2: [Name] (mentioned by [N] people)
-- [Grouped item]
-- [Grouped item]
-**Root cause:** [One sentence hypothesis]
-
-#### Theme 3: [Name]
-[same structure]
-
-### Action Items
-| # | Action | Owner | Due | Theme |
-|---|--------|-------|-----|-------|
-| 1 | [Specific, actionable task] | [person] | [date] | Theme 1 |
-| 2 | [Specific, actionable task] | [person] | [date] | Theme 2 |
-| 3 | [Specific, actionable task] | [person] | [date] | Theme 1 |
-
-### Patterns (if prior retro context available)
-- **Recurring:** [Theme that keeps appearing] — previous actions may not have been effective
-- **New:** [Theme appearing for the first time] — investigate
-- **Resolved:** [Theme from last retro that did not appear] — actions worked
-
-### Team Health Signal
-[One sentence summary: is the team trending better, worse, or stable based on these notes?]
-```
-
+Retro Synthesis: [Date/Sprint]Themes (ranked by frequency + impact)Theme 1: [Name] (mentioned by [N] people)[Grouped item][Grouped item][Grouped item]
+Root cause: [One sentence hypothesis]Theme 2: [Name] (mentioned by [N] people)[Grouped item][Grouped item]
+Root cause: [One sentence hypothesis]Theme 3: [Name][same structure]Action Items#ActionOwnerDueTheme1[Specific, actionable task][person][date]Theme 12[Specific, actionable task][person][date]Theme 23[Specific, actionable task][person][date]Theme 1Patterns (if prior retro context available)Recurring: [Theme that keeps appearing] — previous actions may not have been effectiveNew: [Theme appearing for the first time] — investigateResolved: [Theme from last retro that did not appear] — actions workedTeam Health Signal[One sentence summary: is the team trending better, worse, or stable based on these notes?]
 ## Supported Formats
 
 ### 4Ls
@@ -126,6 +59,21 @@ Two modes: GENERATE a retro board with prompts, or SYNTHESIZE raw retro notes in
 - **Anchor (holding us back):** What is slowing us down
 - **Rocks (risks ahead):** What could hurt us
 - **Island (destination):** Where we are trying to get to
+
+### Mad, Sad, Glad
+- **Mad:** What frustrated us, blocked us, or caused friction during the cycle
+- **Sad:** What disappointed us or fell short of our expectations
+- **Glad:** What made us happy, successful, or proud of our work
+
+### Timeline / Dataline
+- **Chronology / Events:** Key milestones, releases, or critical incidents that happened over time
+- **Highs:** Moments where team morale, energy, or performance peaked
+- **Lows:** Moments where morale dropped, obstacles mounted, or stress spiked
+
+### Three Little Pigs
+- **House of Straw:** What parts of our code, architecture, or process are fragile and easily broken
+- **House of Sticks:** What parts are reasonably solid but could use reinforcement under pressure
+- **House of Bricks:** What is robust, well-engineered, and able to withstand severe shocks
 
 ## Rules
 
